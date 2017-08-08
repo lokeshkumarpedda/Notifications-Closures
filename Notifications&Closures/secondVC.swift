@@ -10,10 +10,8 @@ import UIKit
 
 class secondVC: UIViewController {
 
-    let k = "lokeshkumarp@helixtechsolutions.com"
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let oneParameterAndReturnValue = { (x: Int) -> Int in
             return x % 10
         }
@@ -62,15 +60,4 @@ class secondVC: UIViewController {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "COLORCHANGING"), object: nil)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
